@@ -1,0 +1,20 @@
+let classInfo=[
+  {
+    uname:"aman",
+    grade:"A+",
+    city:"Delhi"
+  },
+  {
+    uname:"prerna",
+    grade:"A",
+    city:"Pune"
+  },
+  {
+    uname:"karan",
+    grade:"O",
+    city:"Mumbai"
+  }
+];
+console.log(classInfo);
+console.log(classInfo[0]);
+console.log(classInfo[0].uname);
