@@ -1,0 +1,1 @@
+A repository documenting my progress in learning JavaScript. Includes fundamental concepts, practice problems, and mini-projects covering variables, functions, arrays, objects, DOM manipulation, and ES6 features. A personal space to track growth and build coding skills.
