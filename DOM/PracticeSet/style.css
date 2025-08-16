@@ -1,0 +1,25 @@
+.red{
+  color: red;
+}
+
+.blue{
+  background-color: blue;
+}
+.bor{
+  border-style: solid;
+  border-color: black;
+}
+.back{
+  background-color: pink;
+}
+
+#btn{
+  border-color: red;
+}
+
+.textDeco{
+  text-decoration: underline;
+}
+.col{
+  color: purple;
+}
