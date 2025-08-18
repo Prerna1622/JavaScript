@@ -1,0 +1,22 @@
+.d{
+  border: 1px solid black;
+  height: 200px;
+  width: 300px; 
+  text-align: center;
+  padding-top: 5px;
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+button{
+  margin: 10px;
+}
+.box{
+  height: 100px;
+  width: 100px;
+  background-color: pink;
+  border: 1px solid black;
+}
