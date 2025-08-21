@@ -36,18 +36,30 @@
 //   console.log("Failure 1");
 // });
 
+
+
 /******Above Logic with the help of Promise******/
 
-function savetoDB(data){
+ function savetoDB(data){
 return new Promise((resolve,reject)=>{
   let internetSpeed=Math.floor(Math.random()*10)+1;
   if(internetSpeed>4){
-   resolve("Data was saved");
+    resolve("Data was saved");
   }else{
-    reject("Weak Connection");
+     reject("Weak Connection");
   }
 });
 }
+savetoDB("Prerna");
 
-console.log(savetoDB("Prerna"));
+
+
+/***** With the help of then() and catch() *****/
+
+savetoDB("Prerna")
+.then(()=>{
+    console.log("Promise resolved");
+  }).catch(()=>{
+    console.log("Promise rejected");
+  });
 
