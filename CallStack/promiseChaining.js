@@ -14,22 +14,37 @@ return new Promise((resolve,reject)=>{
 
 /***** With the help of then() and catch() *****/
 
+// savetoDB("Prerna")
+// .then(()=>{
+//     console.log("Promise1 data saved");
+//     savetoDB("Mane")
+//     .then(()=>{
+//        console.log("Promise2 data saved");
+//        savetoDB("Hello").
+//        then(()=>{
+//          console.log("Promise3 data saved");
+//        }).catch(()=>{
+//         console.log("Promise3 rejected");
+//        });
+//     }).catch(()=>{
+//       console.log("Promise2 rejected");
+//     });
+//   }).catch(()=>{
+//     console.log("Promise1 rejected");
+//   });
+
 savetoDB("Prerna")
 .then(()=>{
-    console.log("Promise1 resolved");
-    savetoDB("Mane")
-    .then(()=>{
-       console.log("Promise2 resolved");
-       savetoDB("Hello").
-       then(()=>{
-         console.log("Promise3 resolved");
-       }).catch(()=>{
-        console.log("Promise3 rejected");
-       });
-    }).catch(()=>{
-      console.log("Promise2 rejected");
-    });
-  }).catch(()=>{
+  console.log("Promise1 data saved");
+    return savetoDB("Mane");
+  })
+  .then(()=>{
+    console.log("Promise2 data saved");
+    return savetoDB("Hello");
+  })
+  .then(()=>{
+    console.log("Promise3 data saved");
+  })
+  .catch(()=>{
     console.log("Promise1 rejected");
   });
-
