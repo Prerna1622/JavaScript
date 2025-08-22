@@ -34,17 +34,21 @@ return new Promise((resolve,reject)=>{
 //   });
 
 savetoDB("Prerna")
-.then(()=>{
+.then((result)=>{
   console.log("Promise1 data saved");
+   console.log(result);
     return savetoDB("Mane");
   })
   .then(()=>{
     console.log("Promise2 data saved");
+     console.log(result);
     return savetoDB("Hello");
   })
   .then(()=>{
     console.log("Promise3 data saved");
+     console.log(result);
   })
-  .catch(()=>{
+  .catch((error)=>{
     console.log("Promise1 rejected");
+     console.log(error);
   });
